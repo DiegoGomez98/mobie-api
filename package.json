@@ -1,0 +1,19 @@
+{
+  "name": "mobie-api",
+  "version": "1.0.0",
+  "description": "La página web que te ayudará a escoger la próxima película que vas a ver. Diseñado para la práctica de conceptos como Mobile First con css y API rest con JavaScript",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DiegoGomez98/mobie-api.git"
+  },
+  "author": "\u001b@@DiegoGomez98",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DiegoGomez98/mobie-api/issues"
+  },
+  "homepage": "https://github.com/DiegoGomez98/mobie-api#readme"
+}
