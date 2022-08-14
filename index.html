@@ -3,15 +3,197 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mobie API</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Unica+One&display=swap" rel="stylesheet">
+  <script src='https://kit.fontawesome.com/fe3b491692.js' crossorigin='anonymous'></script>
   <link rel="stylesheet" href="./styles/app.css">
+  <title>Movie API</title>
 </head>
 <body>
-  <h1>Hola</h1>
+  <header>
+    <div class="header_arrow inactive">
+      <span class="header-arrow"><i class="fa fa-arrow-left"></i></span>
+    </div>
+    <article class="header_articule">
+      <section class="header_articule_sLeft">
+        <h2 class="header_articule_Sleft-title">HELLO DIEGO</h2>
+        <span class="header_articule_sLeft-text">Whatch your favorite movies here...</span>
+      </section>
+      <section class="header_articule_sRight">
+        <img class="header_articule_sRight-image" src='./styles/assets/img/DSC_0007.JPG' alt='foto de perfil del usuario'>
+      </section>
+    </article>
+  </header>
 
+  <article class="search">
+    <section class="search_content">
+      <i class="fa fa-search"></i>
+      <span>Search</span>
+      <i class="fa fa-microphone"></i>
+    </section>
+  </article>
 
-  <script src="./src/secrets.js"></script>
-  <script src="./src/main.js"></script>
+  <main>
+    <article class="categories">
+      <div class="categories_titles">
+        <h2>CATEGORIES</h2>
+        <span>See more</span>
+      </div>
+      <section class="categories_sections">
+        <section class="categories-container">
+          <h3 class="categories-container-h3">😱</h3>
+          <span class="categories-container-span">Horror</span>
+        </section>
+        <section class="categories-container">
+          <h3 class="categories-container-h3">🥰</h3>
+          <span class="categories-container-span">Romance</span>
+        </section>
+        <section class="categories-container">
+          <h3 class="categories-container-h3">🤣</h3>
+          <span class="categories-container-span">Comedy</span>
+        </section>
+        <section class="categories-container">
+          <h3 class="categories-container-h3">😬</h3>
+          <span class="categories-container-span">Drama</span>
+        </section>
+      </section>
+    </article>
+
+    <article id="trending" class="trendingContainer">
+      <div class="categories_titles">
+        <h2 class="trendingContainer_div-title">trending</h2>
+        <button class="trendingContainer_div-btn">See more</button>
+      </div>
+
+      <section class="movieContent">
+        <!-- <div class="movie-container">
+          <img class="movie-img" src="./styles/assets/img/bt.JPG" alt="">
+        </div> -->
+      </section>
+    </article>
+
+    <article id="newMovie" class="newMovieContainer">
+      <div class="categories_titles">
+        <h2 class="trendingContainer_div-title">New Movies</h2>
+        <button class="trendingContainer_div-btn">See more</button>
+      </div>
+
+      <section class="movieContent">
+        <div class="movie-container">
+          <img class="movie-img" src="./styles/assets/img/hukk.JPG" alt="">
+        </div>
+
+        <div class="movie-container">
+           <img class="movie-img" src="./styles/assets/img/hukk.JPG" alt="">
+        </div>
+        
+        <div class="movie-container">
+          <img class="movie-img" src="./styles/assets/img/hukk.JPG" alt="">
+        </div>
+
+        <div class="movie-container">
+          <img class="movie-img" src="./styles/assets/img/hukk.JPG" alt="">
+        </div>
+
+        <div class="movie-container">
+          <img class="movie-img" src="./styles/assets/img/hukk.JPG" alt="">
+        </div>
+
+        <div class="movie-container">
+          <img class="movie-img" src="./styles/assets/img/hukk.JPG" alt="">
+        </div>
+
+        <div class="movie-container">
+          <img class="movie-img" src="./styles/assets/img/hukk.JPG" alt="">
+        </div>
+      </section>
+    </article>
+
+    <article id="general" class="generalContainer inactive">
+        <div class="trendingContainer_movie_div">
+          <img class="movie-img" src="./styles/assets/img/bt.JPG" alt="">
+        </div>
+
+        <div class="trendingContainer_movie_div">
+          <img class="movie-img" src="./styles/assets/img/bt.JPG" alt="">
+        </div>
+
+        <div class="trendingContainer_movie_div">
+          <img class="movie-img" src="./styles/assets/img/bt.JPG" alt="">
+        </div>
+
+        <div class="trendingContainer_movie_div">
+          <img class="movie-img" src="./styles/assets/img/bt.JPG" alt="">
+        </div>
+
+        <div class="trendingContainer_movie_div">
+          <img class="movie-img" src="./styles/assets/img/bt.JPG" alt="">
+        </div>
+
+        <div class="trendingContainer_movie_div">
+          <img class="movie-img" src="./styles/assets/img/bt.JPG" alt="">
+        </div>
+    </article>
+
+    <article id="movieDetail" class="MovieDetailContainer inactive">
+      <div class="categories_titles">
+        <h2>class</h2>
+        <span>7.6</span>
+        <p class="MovieDetailContainer-description">Lorem ipsum dolor,</p>
+      </div>
+      <section class="categories_sections">
+        <section class="categories-container">
+          <span>Horror</span>
+        </section>
+        <section class="categories-container">
+          <span>Romance</span>
+        </section>
+        <section class="categories-container">
+        <span>Comedy</span>
+       </section>
+       <section class="categories-container">
+        <span>Drama</span>
+       </section>
+      </section>
+
+      <section class="relatedContainer">
+        <div class="categories_titles">
+          <h2 class="relatedContainer-title">similar movies</h2>
+        </div>
+
+        <section class="relatedContainer-scrollContainer">
+          <div class="movie-container">
+            <img class="movie-img" src="./styles/assets/img/DSC_0007.JPG" alt="">
+          </div>
+        </section>
+
+          <div class="movie-container">
+            <img class="movie-img" src="./styles/assets/img/DSC_0007.JPG" alt="">
+          </div>
+
+          <div class="movie-container">
+            <img class="movie-img" src="./styles/assets/img/DSC_0007.JPG" alt="">
+          </div>
+        </section>
+      </section>
+    </article>
+  </main>
+
+  <footer>
+    <section class="footer_left">
+      <a href=""><i class="fa fa-instagram"></i></a>
+      <a href=""><i class="fa fa-github"></i></a>
+      <a href=""><i class="fa fa-linkedin"></i></a>
+    </section>
+    <section class="footer_right">
+      <span>hecho con 🖤 por Diego</span>
+    </section>
+  </footer>
+
+  <script defer src="./src/secrets.js"></script>
+  <script defer src="./src/main.js"></script>
+  <!-- la etiqueta defer es para implementar el diferido, lo que quiere decir que procesará el html mientras procesa el js sin bloquear la implementación del render  -->
 </body>
 </html>

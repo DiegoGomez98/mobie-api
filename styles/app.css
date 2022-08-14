@@ -1,3 +1,304 @@
-body {
-  background-color: aqua;
+:root {
+  --white: #E8EAED;
+  --gray: #818181;
+  --black: #111111;
+  --black2: #161616;
+  --red: #8D4A40;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: 'Bebas Neue', cursive;
+  /* font-family: 'Unica One', cursive; */
+  background-color: var(--black);
+  /* filter: invert(1); */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--black);
+}
+
+img {
+  height: 4rem;
+}
+
+/* HEADER */
+header {
+  width: 100vw;
+}
+
+/* .header-container--long {
+  background-image: url('https://pics.filmaffinity.com/Deadpool-777527803-large.jpg');
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.35) 19.27%, rgba(0, 0, 0, 0) 29.17%), url(https://pics.filmaffinity.com/Deadpool-777527803-large.jpg);
+  background-size: cover !important;
+  height: 480px;
+  position: fixed;
+  top: 0;
+  width: 100%; */
+/* } */
+
+.header_articule {
+  width: 95%;
+  height:4rem;
+  margin: 1rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* .header-arrow {
+  font-weight: var(--font-weight-text2);
+  font-size: 36px;
+  margin-bottom: 16px;
+  cursor: pointer;
+  display: inline-block;
+}
+.header-arrow--white {
+  color: var(--purple-light-1);
+} */
+
+.header_articule section {
+  margin: 2rem;
+}
+
+.header_articule_Sleft-title {
+  color: var(--red);
+  font-family: 'Unica One', cursive;
+  font-size: 1.4rem;
+}
+
+.header_articule_sLeft-text {
+  color: var(--white);
+  letter-spacing: .1rem;
+  font-size: 1rem;
+}
+
+.header_articule_sRight-image {
+  border-radius: 50%;
+}
+
+/* SEARCH */ 
+.search {
+  height: 4rem;
+  width: 100%;
+}
+
+.search_content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 0 2rem 0 2rem;
+  background-color: var(--black2);
+  border-radius: 2rem;
+}
+
+.search_content i {
+  font-size: 2rem;
+  color: var(--white);
+}
+
+.search_content span {
+  text-align: start;
+  width: 100%;
+  border-right: .2rem solid var(--white);
+  color: var(--white);
+  margin: 0 1rem;
+}
+
+/* MAIN */
+.header-arrow {
+  margin: 1.4rem 0 0 1.4rem;
+  height: 2rem;
+  font-size: 2rem;
+  cursor: pointer;
+  display: inline-block;
+  color: var(--white);
+}
+
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* CATEGORIES */
+.categories {
+  width: 100%;
+  height: 8rem;
+  margin: 2rem 0;
+  margin-bottom: 2.4rem;
+}
+
+.categories_titles {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.categories_titles h2 {
+  color: var(--white);
+} 
+
+.categories_titles span {
+  color: var(--red);
+} 
+
+.categories_sections {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  margin-top: .5rem;
+}
+
+.categories-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  margin: 0 1rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+  border: .1rem solid var(--red);
+  -webkit-box-shadow: 0px 0px 8px 2px rgba(141,74,64,1);
+  -moz-box-shadow: 0px 0px 8px 2px rgba(141,74,64,1);
+  box-shadow: 0px 0px 8px 2px rgba(141,74,64,1);
+  background-color: var(--black2);
+}
+
+.categories-container-h3 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.categories-container-span {
+  text-align: center;
+  color: var(--white);
+  font-family: 'Unica One', cursive;
+}
+
+/* TRENDING */
+.trendingContainer {
+  width: 100vw;
+  height: 22rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.categories_titles button {
+  color: var(--red);
+  background: none;
+  border: none;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 1rem;
+} 
+
+.movieContent {
+  width: 100vw;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+
+.movieContent .movie-container{
+  display: inline-block;
+  height: 18rem;
+  max-height: 18rem;
+  padding: 1rem 1rem;
+}
+
+.movie-img {
+  height: 100%;
+  width: 100%;
+  border-radius: 2rem;
+}
+
+/* NEWS MOVIES */
+.newMovieContainer {
+  width: 100vw;
+  height: 22rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+/* GENERAL */
+.generalContainer {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 1.4rem 0;
+}
+
+.trendingContainer_movie_div {
+  width: 100%;
+  margin: 1rem 1rem;
+  height: 12rem;
+  width: 8rem;
+}
+
+/* DETAIL */
+.MovieDetailContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* FOOTER */
+footer {
+  width: 100%;
+  height: 8vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: var(--red);
+}
+
+.footer_left {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer_left i {
+  padding-left: 1rem;
+  font-size: 1.4rem;
+}
+
+.footer_right {
+  width: 100%;
+  font-size: 1.4rem;
+}
+
+/* INACTIVE */
+.inactive {
+  display: none;
 }
