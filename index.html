@@ -12,14 +12,17 @@
   <title>Movie API</title>
 </head>
 <body>
-  <header>
-    <div class="header_arrow inactive">
-      <span class="header-arrow"><i class="fa fa-arrow-left"></i></span>
+  <header id="header" class="headerContainer">
+    <div class="header_arrow">
+      <button class="header_arrow-button"><i class="fa fa-arrow-left"></i></button>
+      <button class="header_arrow-button"><i class="fa fa-retweet"></i></button>
+      <span class="header_arrow-span"> <a href="">Recuerda seguirme en GitHub</a></span>
     </div>
     <article class="header_articule">
       <section class="header_articule_sLeft">
         <h2 class="header_articule_Sleft-title">HELLO DIEGO</h2>
-        <span class="header_articule_sLeft-text">Whatch your favorite movies here...</span>
+        <span class="header_articule_Sleft-text">Whatch your favorite movies here...</span>
+        <h2 class="header_articule_Sleft-title--categoryView">Acción</h2>
       </section>
       <section class="header_articule_sRight">
         <img class="header_articule_sRight-image" src='./styles/assets/img/DSC_0007.JPG' alt='foto de perfil del usuario'>
@@ -27,44 +30,32 @@
     </article>
   </header>
 
-  <article class="search">
-    <section class="search_content">
-      <i class="fa fa-search"></i>
-      <span>Search</span>
-      <i class="fa fa-microphone"></i>
+  <article id="search" class="searchContainer">
+    <section class="searchContainer_content">
+      <i id="iconSearch" class="fa fa-search"></i>
+      <input id="inputsearch" placeholder="Search"></input>
+      <i id="iconMicrophone" class="fa fa-microphone"></i>
     </section>
   </article>
 
-  <main>
-    <article class="categories">
+  <main id="main">
+    <article id="categories" class="categoriesContainer">
       <div class="categories_titles">
-        <h2>CATEGORIES</h2>
-        <span>See more</span>
+        <h2 id="categories_titles-h2">CATEGORIES</h2>
+        <span id="categories_titles-span">See more</span>
       </div>
       <section class="categories_sections">
-        <section class="categories-container">
-          <h3 class="categories-container-h3">😱</h3>
-          <span class="categories-container-span">Horror</span>
-        </section>
-        <section class="categories-container">
-          <h3 class="categories-container-h3">🥰</h3>
-          <span class="categories-container-span">Romance</span>
-        </section>
-        <section class="categories-container">
-          <h3 class="categories-container-h3">🤣</h3>
-          <span class="categories-container-span">Comedy</span>
-        </section>
-        <section class="categories-container">
-          <h3 class="categories-container-h3">😬</h3>
-          <span class="categories-container-span">Drama</span>
-        </section>
+        <!-- <section class="categories-content">
+          <h3 class="categories-content-h3">😬</h3>
+          <span class="categories-content-span">Drama</span>
+        </section> -->
       </section>
     </article>
 
     <article id="trending" class="trendingContainer">
       <div class="categories_titles">
         <h2 class="trendingContainer_div-title">trending</h2>
-        <button class="trendingContainer_div-btn">See more</button>
+        <button id="trending_btn" class="trendingContainer_div-btn">See more</button>
       </div>
 
       <section class="movieContent">
@@ -74,111 +65,51 @@
       </section>
     </article>
 
-    <article id="newMovie" class="newMovieContainer">
+    <article id="topRated" class="topRatedContainer">
       <div class="categories_titles">
-        <h2 class="trendingContainer_div-title">New Movies</h2>
-        <button class="trendingContainer_div-btn">See more</button>
+        <h2 class="trendingContainer_div-title">top rated</h2>
+        <button id="topRated_btn" class="trendingContainer_div-btn">See more</button>
       </div>
 
       <section class="movieContent">
-        <div class="movie-container">
+        <!-- <div class="movie-container">
           <img class="movie-img" src="./styles/assets/img/hukk.JPG" alt="">
-        </div>
-
-        <div class="movie-container">
-           <img class="movie-img" src="./styles/assets/img/hukk.JPG" alt="">
-        </div>
-        
-        <div class="movie-container">
-          <img class="movie-img" src="./styles/assets/img/hukk.JPG" alt="">
-        </div>
-
-        <div class="movie-container">
-          <img class="movie-img" src="./styles/assets/img/hukk.JPG" alt="">
-        </div>
-
-        <div class="movie-container">
-          <img class="movie-img" src="./styles/assets/img/hukk.JPG" alt="">
-        </div>
-
-        <div class="movie-container">
-          <img class="movie-img" src="./styles/assets/img/hukk.JPG" alt="">
-        </div>
-
-        <div class="movie-container">
-          <img class="movie-img" src="./styles/assets/img/hukk.JPG" alt="">
-        </div>
+        </div> -->
       </section>
     </article>
 
     <article id="general" class="generalContainer inactive">
-        <div class="trendingContainer_movie_div">
+      <!-- vertical -->
+        <!-- <div class="trendingContainer_movie_div">
           <img class="movie-img" src="./styles/assets/img/bt.JPG" alt="">
-        </div>
-
-        <div class="trendingContainer_movie_div">
-          <img class="movie-img" src="./styles/assets/img/bt.JPG" alt="">
-        </div>
-
-        <div class="trendingContainer_movie_div">
-          <img class="movie-img" src="./styles/assets/img/bt.JPG" alt="">
-        </div>
-
-        <div class="trendingContainer_movie_div">
-          <img class="movie-img" src="./styles/assets/img/bt.JPG" alt="">
-        </div>
-
-        <div class="trendingContainer_movie_div">
-          <img class="movie-img" src="./styles/assets/img/bt.JPG" alt="">
-        </div>
-
-        <div class="trendingContainer_movie_div">
-          <img class="movie-img" src="./styles/assets/img/bt.JPG" alt="">
-        </div>
+        </div> -->
     </article>
 
-    <article id="movieDetail" class="MovieDetailContainer inactive">
-      <div class="categories_titles">
-        <h2>class</h2>
-        <span>7.6</span>
-        <p class="MovieDetailContainer-description">Lorem ipsum dolor,</p>
+    <article id="movieDetail" class="MovieDetailContainer">
+      <div class="categories_titles--detail">
+        <h2 class="trendingContainer_div-title--detail">Nombre Película</h2>
+        <span class="trendingContainer_div-span">Calificación</span>
+        <p class="MovieDetailContainer-description">bla bla bla y contexto y pequeños spoilers de trama para la película, creo que estoy escribiendo demasiado jjaja pero quiero que se vea un poco real para la prueba, gracias por leer hasta el final. Por cierto, escribir el ultimo "prueba" me constó demasiado</p>
       </div>
-      <section class="categories_sections">
-        <section class="categories-container">
-          <span>Horror</span>
-        </section>
-        <section class="categories-container">
-          <span>Romance</span>
-        </section>
-        <section class="categories-container">
-        <span>Comedy</span>
-       </section>
-       <section class="categories-container">
-        <span>Drama</span>
-       </section>
-      </section>
-
-      <section class="relatedContainer">
-        <div class="categories_titles">
-          <h2 class="relatedContainer-title">similar movies</h2>
-        </div>
-
-        <section class="relatedContainer-scrollContainer">
-          <div class="movie-container">
-            <img class="movie-img" src="./styles/assets/img/DSC_0007.JPG" alt="">
-          </div>
-        </section>
-
-          <div class="movie-container">
-            <img class="movie-img" src="./styles/assets/img/DSC_0007.JPG" alt="">
-          </div>
-
-          <div class="movie-container">
-            <img class="movie-img" src="./styles/assets/img/DSC_0007.JPG" alt="">
-          </div>
-        </section>
-      </section>
     </article>
+
+    <article id="SimilarMovies" class="similarMoviesContainer">
+      <div class="categories_titles">
+        <h2 class="trendingContainer_div-title">Similar Movies</h2>
+        <button class="trendingContainer_div-btn">See more</button>
+      </div>
+
+      <section class="movieContent">
+        <!-- <div class="movie-container">
+          <img class="movie-img" src="./styles/assets/img/bt.JPG" alt="">
+        </div> -->
+        <div class="movie-container">
+          <img class="movie-img" src="./styles/assets/img/bt.JPG" alt="">
+        </div>
+        <div class="movie-container">
+          <img class="movie-img" src="./styles/assets/img/bt.JPG" alt="">
+        </div>
+      </section>
   </main>
 
   <footer>
@@ -192,8 +123,11 @@
     </section>
   </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   <script defer src="./src/secrets.js"></script>
+  <script defer src="./src/node.js"></script>
   <script defer src="./src/main.js"></script>
+  <script defer src="./src/navigation.js"></script>
   <!-- la etiqueta defer es para implementar el diferido, lo que quiere decir que procesará el html mientras procesa el js sin bloquear la implementación del render  -->
 </body>
 </html>

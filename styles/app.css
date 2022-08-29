@@ -34,19 +34,50 @@ img {
 }
 
 /* HEADER */
-header {
+.headerContainer {
   width: 100vw;
 }
 
-/* .header-container--long {
+.header-container--long {
   background-image: url('https://pics.filmaffinity.com/Deadpool-777527803-large.jpg');
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.35) 19.27%, rgba(0, 0, 0, 0) 29.17%), url(https://pics.filmaffinity.com/Deadpool-777527803-large.jpg);
-  background-size: cover !important;
-  height: 480px;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 80vh;
+  width: 100% ;
+}
+
+.header_arrow {
+  height: auto;
   position: fixed;
+  left: 0;
   top: 0;
-  width: 100%; */
-/* } */
+  right: 0;
+  display: flex;
+  padding: 1rem;
+  border: .1rem solid var(--gray);
+  background-color: var(--black);
+}
+
+.header_arrow-button {
+  font-size: 2.8rem;
+  color: var(--white);
+  border: none;
+  background: transparent;
+  padding: 0 1rem;
+  border-right: .2rem solid var(--white);
+}
+
+.header_arrow-span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.header_arrow-span a {
+  color: var(--white);
+}
 
 .header_articule {
   width: 95%;
@@ -57,16 +88,6 @@ header {
   align-items: center;
 }
 
-/* .header-arrow {
-  font-weight: var(--font-weight-text2);
-  font-size: 36px;
-  margin-bottom: 16px;
-  cursor: pointer;
-  display: inline-block;
-}
-.header-arrow--white {
-  color: var(--purple-light-1);
-} */
 
 .header_articule section {
   margin: 2rem;
@@ -78,7 +99,13 @@ header {
   font-size: 1.4rem;
 }
 
-.header_articule_sLeft-text {
+.header_articule_Sleft-title--categoryView {
+  color: var(--red);
+  font-family: 'Unica One', cursive;
+  font-size: 1.4rem;
+}
+
+.header_articule_Sleft-text {
   color: var(--white);
   letter-spacing: .1rem;
   font-size: 1rem;
@@ -89,12 +116,12 @@ header {
 }
 
 /* SEARCH */ 
-.search {
+.searchContainer {
   height: 4rem;
   width: 100%;
 }
 
-.search_content {
+.searchContainer_content {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -105,17 +132,19 @@ header {
   border-radius: 2rem;
 }
 
-.search_content i {
+.searchContainer_content i {
   font-size: 2rem;
   color: var(--white);
 }
 
-.search_content span {
-  text-align: start;
+.searchContainer_content input {
   width: 100%;
+  border: none;
+  background: transparent;
   border-right: .2rem solid var(--white);
   color: var(--white);
-  margin: 0 1rem;
+  margin: 0.1rem 2rem 0.1rem 2rem;
+  font-family:'Bebas Neue', cursive;
 }
 
 /* MAIN */
@@ -137,11 +166,10 @@ main {
 }
 
 /* CATEGORIES */
-.categories {
-  width: 100%;
-  height: 8rem;
-  margin: 2rem 0;
-  margin-bottom: 2.4rem;
+#categories {
+  width: 100vw;
+  height: 10rem;
+  margin-top: 2rem;
 }
 
 .categories_titles {
@@ -152,58 +180,71 @@ main {
   padding: 0 1rem;
 }
 
-.categories_titles h2 {
+#categories_titles-h2 {
   color: var(--white);
 } 
 
-.categories_titles span {
+#categories_titles-span {
   color: var(--red);
 } 
 
 .categories_sections {
-  width: 100%;
-  height: 80%;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: flex-start;
+  width: 100vw;
+  height: 8rem;
   margin-top: .5rem;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
 }
 
-.categories-container {
-  height: 100%;
-  width: 100%;
-  display: flex;
+.categories-content {
+  width: 8rem;
+  height: 6rem;
+  display: inline-block;
   margin: 0 1rem;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   border-radius: 1rem;
   border: .1rem solid var(--red);
   -webkit-box-shadow: 0px 0px 8px 2px rgba(141,74,64,1);
   -moz-box-shadow: 0px 0px 8px 2px rgba(141,74,64,1);
   box-shadow: 0px 0px 8px 2px rgba(141,74,64,1);
   background-color: var(--black2);
+  overflow: hidden;
 }
 
-.categories-container-h3 {
+.categories_content-h3 {
   font-size: 2rem;
   text-align: center;
 }
 
-.categories-container-span {
+.categories-content-h2 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.categories_content-span {
   text-align: center;
   color: var(--white);
   font-family: 'Unica One', cursive;
 }
 
+.categories-emoji {
+  width: 100%;
+  height: 2rem;
+  display: inline-block;
+}
+
 /* TRENDING */
 .trendingContainer {
   width: 100vw;
-  height: 22rem;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
+}
+
+.trendingContainer_div-title {
+  color: var(--white);
 }
 
 .categories_titles button {
@@ -216,16 +257,17 @@ main {
 
 .movieContent {
   width: 100vw;
+  height: 100vh;
   overflow-x: scroll;
   overflow-y: hidden;
   white-space: nowrap;
 }
 
-.movieContent .movie-container{
+.movie-container{
+  height: 94vh;
+  max-height: 48rem;
   display: inline-block;
-  height: 18rem;
-  max-height: 18rem;
-  padding: 1rem 1rem;
+  margin: 1rem 0 1rem 0;
 }
 
 .movie-img {
@@ -249,9 +291,8 @@ main {
   width: 100vw;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
-  padding: 1.4rem 0;
 }
 
 .trendingContainer_movie_div {
@@ -269,6 +310,45 @@ main {
   align-items: center;
   flex-direction: column;
 }
+
+
+.categories_titles--detail {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr 2fr;
+  align-items: stretch;
+  padding: .8rem;
+}
+
+.trendingContainer_div-title--detail{
+  color: var(--white);
+  font-size: 1.8rem;
+  grid-column: 1/4;
+  text-align: start;
+  margin-top: .8rem;
+}
+
+.trendingContainer_div-span {
+  color: var(--red);
+  margin-top: .8rem;
+  text-align: start;
+}
+
+.MovieDetailContainer-description {
+  color: var(--white);
+  grid-column:1/5 ;
+  text-align: justify;
+  margin-top: .8rem;
+  font-family: 'Unica One', cursive;
+}
+
+/* RELATED - SIMILAR */
+
+.relatedContainer {
+  margin-top: .4rem;
+}
+
 
 /* FOOTER */
 footer {
