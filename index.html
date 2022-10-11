@@ -14,9 +14,9 @@
 <body>
   <header id="header" class="headerContainer">
     <div class="header_arrow">
-      <button class="header_arrow-button"><i class="fa fa-arrow-left"></i></button>
-      <button class="header_arrow-button"><i class="fa fa-retweet"></i></button>
-      <span class="header_arrow-span"> <a href="">Recuerda seguirme en GitHub</a></span>
+      <button class="header_arrow-button header_arrow-button-back"><i class="fa fa-arrow-left"></i></button>
+      <button class="header_arrow-button header_arrow-button-reload"><i class="fa fa-retweet"></i></button>
+      <span class="header_arrow-span"> <a href="https://github.com/DiegoGomez98/mobie-api">Recuerda seguirme en GitHub</a></span>
     </div>
     <article class="header_articule">
       <section class="header_articule_sLeft">
@@ -25,6 +25,11 @@
         <h2 class="header_articule_Sleft-title--categoryView">Acción</h2>
       </section>
       <section class="header_articule_sRight">
+          <select name="idiomas" id="languageOptions">
+            <!-- <option value="es">Español</option>
+            <option value="en-US">English</option> -->
+</select>
+        </div>
         <img class="header_articule_sRight-image" src='./styles/assets/img/DSC_0007.JPG' alt='foto de perfil del usuario'>
       </section>
     </article>
@@ -45,10 +50,29 @@
         <span id="categories_titles-span">See more</span>
       </div>
       <section class="categories_sections">
+        <section class="categories-content categories-content--loading"></section>
+        <section class="categories-content categories-content--loading"></section>
+        <section class="categories-content categories-content--loading"></section>
         <!-- <section class="categories-content">
           <h3 class="categories-content-h3">😬</h3>
           <span class="categories-content-span">Drama</span>
         </section> -->
+      </section>
+    </article>
+
+    <article id="favorited" class="favorited-container">
+       <div class="categories_titles">
+        <h2 class="trendingContainer_div-title">Favorited</h2>
+        <button id="favorited_btn" class="trendingContainer_div-btn">See more</button>
+      </div>
+
+      <section id="favoritedContainer" class="favoritedContent">
+        <div class="movie-container trendingContainer_movie_div--loading"></div>
+        <div class="movie-container trendingContainer_movie_div--loading"></div>
+        <div class="movie-container trendingContainer_movie_div--loading"></div>
+        <!-- <div class="movie-container">
+          <img class="movie-img" src="./styles/assets/img/bt.JPG" alt=""> -->
+        </div>
       </section>
     </article>
 
@@ -59,6 +83,9 @@
       </div>
 
       <section class="movieContent">
+        <div class="movie-container movie-container--loading"></div>
+        <div class="movie-container movie-container--loading"></div>
+        <div class="movie-container movie-container--loading"></div>
         <!-- <div class="movie-container">
           <img class="movie-img" src="./styles/assets/img/bt.JPG" alt="">
         </div> -->
@@ -71,7 +98,10 @@
         <button id="topRated_btn" class="trendingContainer_div-btn">See more</button>
       </div>
 
-      <section class="movieContent">
+      <section class="TopRated-movieContent">
+        <div class="movie-container movie-container--loading"></div>
+        <div class="movie-container movie-container--loading"></div>
+        <div class="movie-container movie-container--loading"></div>
         <!-- <div class="movie-container">
           <img class="movie-img" src="./styles/assets/img/hukk.JPG" alt="">
         </div> -->
@@ -80,6 +110,9 @@
 
     <article id="general" class="generalContainer inactive">
       <!-- vertical -->
+      <div class="trendingContainer_movie_div trendingContainer_movie_div--loading"></div>
+      <div class="trendingContainer_movie_div trendingContainer_movie_div--loading"></div>
+      <div class="trendingContainer_movie_div trendingContainer_movie_div--loading"></div>
         <!-- <div class="trendingContainer_movie_div">
           <img class="movie-img" src="./styles/assets/img/bt.JPG" alt="">
         </div> -->
@@ -87,29 +120,28 @@
 
     <article id="movieDetail" class="MovieDetailContainer">
       <div class="categories_titles--detail">
-        <h2 class="trendingContainer_div-title--detail">Nombre Película</h2>
-        <span class="trendingContainer_div-span">Calificación</span>
-        <p class="MovieDetailContainer-description">bla bla bla y contexto y pequeños spoilers de trama para la película, creo que estoy escribiendo demasiado jjaja pero quiero que se vea un poco real para la prueba, gracias por leer hasta el final. Por cierto, escribir el ultimo "prueba" me constó demasiado</p>
+        <!-- <h2 class="trendingContainer_div-title--detail">Nombre Película</h2> -->
+        <h2 class="categories_titles--detail-title"></h2>
+        <!-- <span class="trendingContainer_div-span">Calificación</span> -->
+        <span class="categories_titles--detail-span"></span>
+        <!-- <p class="MovieDetailContainer-description">bla bla bla y contexto y pequeños spoilers de trama para la película, creo que estoy escribiendo demasiado jjaja pero quiero que se vea un poco real para la prueba, gracias por leer hasta el final. Por cierto, escribir el ultimo "prueba" me constó demasiado</p> -->
+        <p class="categories_titles--detail-description"></p>
       </div>
+      <section class="movieDetail_categories"></section>
     </article>
 
-    <article id="SimilarMovies" class="similarMoviesContainer">
+    <article id="similarMovies" class="similarMoviesContainer">
       <div class="categories_titles">
         <h2 class="trendingContainer_div-title">Similar Movies</h2>
         <button class="trendingContainer_div-btn">See more</button>
       </div>
 
-      <section class="movieContent">
-        <!-- <div class="movie-container">
-          <img class="movie-img" src="./styles/assets/img/bt.JPG" alt="">
-        </div> -->
-        <div class="movie-container">
-          <img class="movie-img" src="./styles/assets/img/bt.JPG" alt="">
-        </div>
-        <div class="movie-container">
-          <img class="movie-img" src="./styles/assets/img/bt.JPG" alt="">
-        </div>
+      <section class="similar-movieContent">
+        <section class="similar-movieContent--loading"></section>
+        <section class="similar-movieContent--loading"></section>
+        <section class="similar-movieContent--loading"></section>
       </section>
+    </article>
   </main>
 
   <footer>

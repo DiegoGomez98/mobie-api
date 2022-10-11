@@ -7,7 +7,8 @@ const trending = document.querySelector('.trendingContainer');
 const topRated = document.querySelector('#topRated');
 const general = document.querySelector('.generalContainer');
 const movieDetail = document.querySelector('#movieDetail');
-const SimilarMovies = document.querySelector('#SimilarMovies');
+const similarMovies = document.querySelector('#similarMovies');
+const favorited = document.querySelector('#favorited');
 
 // SECTIONS && CONTAINERS
 const header_arrow = document.querySelector('.header_arrow');
@@ -23,11 +24,19 @@ const trendingContainer_movie_div = document.querySelector('.trendingContainer_m
 const relatedContainer = document.querySelector('.relatedContainer');
 const relatedContainerScrollContainer = document.querySelector('.relatedContainer-scrollContainer');
 const movie_container = document.querySelector('.movie-container');
-
-movieContent
+const movieDetail_categories = document.querySelector('.movieDetail_categories');
+const similar_movieContent = document.querySelector('.similar-movieContent');
+const TopRated_movieContent = document.querySelector('.TopRated-movieContent');
+const movie_container_loading = document.querySelector('.movie-container--loading');
+const trendingContainer_movie_div_loading = document.querySelector('.trendingContainer_movie_div--loading');
+const similar_movieContent_loading = document.querySelector('.similar-movieContent--loading');
+const categories_content_loading = document.querySelector('.categories-content--loading');
+const favoritedContent = document.querySelector('#favoritedContainer');
+const languageOptions = document.querySelector('#languageOptions');
 
 // ELEMENTS
-const header_arrow_button = document.querySelector('.header_arrow-button');
+const header_arrow_button_back = document.querySelector('.header_arrow-button-back');
+const header_arrow_button_reload = document.querySelector('.header_arrow-button-reload');
 const header_arrow_span = document.querySelector('.header_arrow-span');
 const header_articule_Sleft_title = document.querySelector('.header_articule_Sleft-title');
 const header_articule_sLeft_text = document.querySelector('.header_articule_Sleft-text');
@@ -47,4 +56,7 @@ const relatedContainer_title = document.querySelector('.relatedContainer-title')
 const categories_titles_h2_detail = document.querySelector('.categories_titles-h2--detail');
 const topRated_btn = document.querySelector('#topRated_btn');
 const trending_btn = document.querySelector('#trending_btn');
-
+const categories_titles_detail_title = document.querySelector('.categories_titles--detail-title');
+const categories_titles_detail_span = document.querySelector(".categories_titles--detail-span");
+const categories_titles_detail_description = document.querySelector(".categories_titles--detail-description");
+const languageOptions_btn = document.querySelector(".languageOptions-btn");
