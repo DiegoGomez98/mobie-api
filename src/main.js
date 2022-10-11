@@ -212,10 +212,10 @@ function createCategories(categories, container) {
 // LLAMADOS A LA API
 
 async function getTrendingMoviesPreview() {
-  const { data } = await api('/trending/movie/day');
+  const { data } = await api('/trending/movie/day', {params:{language:lang}});
   const movies = data.results;
   maxPage = data.total_pages;
-  
+
   createMovies(movies, movieContent, { lazyLoad: true, clean: true });
 }
 
@@ -325,7 +325,7 @@ async function getPaginatedMoviesBySearch(query) {
 }
 
 async function getTrendingMovies() {
-  const { data } = await api('/trending/movie/day');
+  const { data } = await api('/trending/movie/day', {params:{language:lang}});
   movieContent.innerHTML = "";
   const movies = data.results;
   
@@ -414,7 +414,7 @@ async function getPaginatedTopRatedMovies() {
 
 
 async function getMovieById(id) {
-  const { data: movie } = await api(`/movie/${id}`, {language: lang});
+  const { data: movie } = await api(`/movie/${id}`, {params:{language:lang}});
   // recibimos un objeto data y lo renombramos como movie
  
   const movieImgURL = `https://image.tmdb.org/t/p/w300${movie.poster_path}`;

@@ -23,10 +23,9 @@ topRated_btn.addEventListener('click', () => {
   location.hash = 'topRated'
 })
 
-languageOptions.addEventListener("change", (event) => {
-  lang = event.target.value;
+languageOptions.addEventListener("click", () => {
+  lang = languageOptions.value;
   console.log(lang)
-  console.log(event)
   homePage();
   // getLanguages();
 });
@@ -83,7 +82,9 @@ function homePage() {
   header.style.background = ('');
   header_arrow.classList.add('inactive');
   header_articule_Sleft_title.classList.remove('inactive');
-  header_articule_Sleft_title.classList.remove('header_articule_Sleft-title--categoryView');
+  header_articule_Sleft_title.classList.remove('inactive');
+  header_articule_sCenter.classList.remove('inactive');
+  header_articule_sRight.classList.remove('inactive');
   header_articule_Sleft_title_categoryView.classList.add('inactive');
 
   search.classList.remove('inactive');
@@ -99,6 +100,8 @@ function homePage() {
   movie_container_loading.classList.remove('inactive');
   trendingContainer_movie_div_loading.classList.add('inactive');
   similar_movieContent_loading.classList.add('inactive');
+  header_articule_sLeft_text.classList.remove('inactive');
+  header_articule_sRight_image.classList.remove('inactive');
 
   getTrendingMoviesPreview();
   getCategoriesMoviesPreview();

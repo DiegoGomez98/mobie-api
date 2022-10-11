@@ -14,6 +14,7 @@ const favorited = document.querySelector('#favorited');
 const header_arrow = document.querySelector('.header_arrow');
 const header_articule = document.querySelector('.header_articule');
 const header_articule_sLeft = document.querySelector('.header_articule_sLeft');
+const header_articule_sCenter = document.querySelector('.header_articule_sCenter');
 const header_articule_sRight = document.querySelector('.header_articule_sRight');
 const searchContainer_content = document.querySelector('.searchContainer_content');
 const categories_titles = document.querySelector('.categories_titles');

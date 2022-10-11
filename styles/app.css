@@ -83,7 +83,7 @@ img {
   height:4rem;
   margin: 1rem 1rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 
